@@ -1,48 +1,55 @@
 ---
-title: 제공 및 활성화 - 강력한 경험 및 성능
-description: 지원이 필요한 기업이 올바른 채널에서 올바른 개인 앞에 올바른 콘텐츠를 제공할 수 있도록 지원합니다. 콘텐츠 공급망은 다른 솔루션보다 이러한 연결을 더 잘 만들어주는 동시에 전반적인 콘텐츠 성능을 보장하기 위한 분석도 제공합니다.
-solution: Experience Cloud, Workfront, Creative Cloud, Experience Manager Assets
-feature-set: Experience Manager, Experience Manager Assets, Experience Manager Sites, Journey Optimizer, Creative Cloud
-feature: Asset Management, Asset Processing, Collaboration, Share, Performance Monitoring, Personalization, Channels Activity, Gen AI
-topic: Content Management, Collaboration, Personalization
+title: 게재 및 활성화 자습서
+description: 컨텐츠 및 캠페인의 강력한 경험과 성능.  빠른 자산 활성화 및 더 나은 컨텐츠 성능
+solution: Experience Cloud, Experience Manager, Campaign, Journey Optimizer, Marketo, Target
+feature-set: Experience Cloud, Experience Manager, Campaign, Journey Optimizer, Marketo Engage, Target
+topic: Content Management, Collaboration, Personalization, Artificial Intelligence
 role: Admin, User, Leader, Data Architect, Data Engineer
 level: Beginner
-last-substantial-update: 2023-11-16T00:00:00Z
+last-substantial-update: 2024-03-06T00:00:00Z
 jira: KT-14157
-source-git-commit: 2ad7a5cfde323b7a6f726f98ec4c5eafd7cd4d86
+source-git-commit: fecc107042220664ce5b76584f834a025844ef4b
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 1%
+source-wordcount: '610'
+ht-degree: 2%
 
 ---
 
 
-# 게재 및 활성화: 강력한 경험과 성능
+# 게재 및 활성화 자습서
 
-지원이 필요한 기업이 올바른 채널에서 올바른 개인 앞에 올바른 콘텐츠를 제공할 수 있도록 지원합니다. 콘텐츠 공급망은 다른 솔루션보다 이러한 연결을 더 잘 만들어주는 동시에 전반적인 콘텐츠 성능을 보장하기 위한 분석도 제공합니다.
-
-## 주요 비즈니스 사용 사례
-
-* 에셋을 손쉽게 찾아 재사용
-* 영향력이 큰 경험을 신속하게 제작 및 게시
-* 즉시 사본 생성 및 테스트
-* 채널 전반에 걸쳐 관련성 있고 개인화된 경험 배포
+컨텐츠 및 캠페인의 강력한 경험과 성능.  빠른 자산 활성화 및 더 나은 컨텐츠 성능
 
 컨텐츠 활성화 및 분석에 사용되는 Adobe 솔루션은 다음과 같습니다.
-
 
 <table>
     <tr style="border: 0;">
       <td style="vertical-align: middle">
-        <p style="margin: 0"><img alt="Experience Manager Assets" src="/help/assets/aem-logo.png" style="verticle-align: middle;width: 42px;height:42px;"></p>
-        <strong>Experience Manager Assets</strong>
-      </td>
-      <td style="vertical-align: middle">
         <p style="margin: 0"><img alt="Experience Manager Sites" src="/help/assets/aem-logo.png" style="verticle-align: middle;width: 42px;height: 42px;"></p>
         <strong>Experience Manager Sites</strong>
       </td>
+      <td style="vertical-align: middle">
+        <p style="margin: 0"><img alt="Adobe Campaign" src="/help/assets/ac-logo.png" style="verticle-align: middle;width: 42px;height: 42px;"></p>
+        <strong>Adobe Campaign</strong>
+      </td>
+      <td style="vertical-align: middle">
+        <p style="margin: 0"><img alt="Journey Optimizer" src="/help/assets/ajo-logo.png" style="verticle-align: middle;width: 42px;height: 42px;"></p>
+        <strong>Journey Optimizer</strong>
+      </td>
+      <td style="vertical-align: middle">
+        <p style="margin: 0"><img alt="Marketo" src="/help/assets/marketo-logo.png" style="verticle-align: middle;width: 42px;height: 42px;"></p>
+        <strong>Marketo</strong>
+      </td>
+      <td style="vertical-align: middle">
+        <p style="margin: 0"><img alt="대상" src="/help/assets/target-logo.png" style="verticle-align: middle;width: 42px;height: 42px;"></p>
+        <strong>대상</strong>
+      </td>
     </tr>
 </table>
+
+>[!TIP]
+>
+>당사의 Adobe 제품 전문가 팀은 주요 콘텐츠 공급망 사용 사례에 대한 통합 튜토리얼 컬렉션을 취합했습니다. 두 개 이상의 솔루션을 사용하는 경우 이러한 솔루션을 통합하는 가장 좋은 방법을 알아보십시오.  다음을 확인하십시오. [콘텐츠 공급망 통합 자습서](https://experienceleague.adobe.com/docs/integrations-learn/experience-cloud/solution-categories/content-supply-chain.html?lang=en).
 
 ## 튜토리얼
 
