@@ -1,27 +1,27 @@
 ---
-title: 워크플로 및 계획 - 작업 능률화 및 가속화
-description: 컨텐츠 제작 및 완료에 이르는 계획 프로세스를 통해 컨텐츠 요구 사항을 연결하고 추적하기 위해 고군분투하는 기업 프로젝트 전반에 걸쳐 효과적인 프로세스, 계획, 승인 및 데이터 일관성이 결여되어 이 회사의 콘텐츠 공급망은 생산성과 효율성을 모두 저해하고 있습니다.
-solution: Experience Cloud, Workfront, Creative Cloud, Experience Manager Assets
-feature-set: Experience Manager, Experience Manager Assets, Creative Cloud, Workfront
-feature: Workflow, Asset Management, Asset Processing, Collaboration, Share, People Teams and Groups, Work Management, Gen AI
-topic: Content Management, Collaboration
+title: 워크플로우 및 계획 자습서
+description: 전체 콘텐츠 라이프사이클에 걸쳐 간소화하고 투명한 워크플로를 구축할 수 있습니다.  검토 및 승인 프로세스를 가속화합니다.  수동 워크플로우 자동화
+solution: Experience Cloud, Workfront, Creative Cloud
+feature-set: Creative Cloud, Workfront
+feature: Workflow, Collaboration, Share, People Teams and Groups, Work Management, Gen AI
+topic: Content Management, Collaboration, Artificial Intelligence
 role: Admin, User, Leader, Developer
 level: Beginner
-last-substantial-update: 2023-11-16T00:00:00Z
+last-substantial-update: 2024-03-06T00:00:00Z
 jira: KT-14154
-source-git-commit: 2ad7a5cfde323b7a6f726f98ec4c5eafd7cd4d86
+source-git-commit: ac328c68438276c1c7b0a6ea66ef9e86d73fed5f
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '446'
 ht-degree: 8%
 
 ---
 
 
-# 워크플로 및 계획: 작업 능률화 및 가속화
+# 워크플로우 및 계획 자습서
 
-이는 계획, 제작, 완료에 이르는 모든 컨텐츠 요구 사항을 연결하고 추적하기 위해 고군분투하는 기업을 위한 것입니다. 프로젝트 전반에 걸쳐 효과적인 프로세스, 계획, 승인 및 데이터 일관성이 결여되어 이 회사의 콘텐츠 공급망은 생산성과 효율성을 모두 저해하고 있습니다.
+전체 콘텐츠 라이프사이클에 걸쳐 간소화하고 투명한 워크플로를 구축할 수 있습니다.  검토 및 승인 프로세스를 가속화합니다.  수동 워크플로우 자동화
 
-계획 및 워크플로에 사용되는 Adobe 솔루션은 다음과 같습니다.
+워크플로 및 계획에 사용되는 Adobe 솔루션은 다음과 같습니다.
 
 <table>
     <tr style="border: 0;">
@@ -33,19 +33,12 @@ ht-degree: 8%
         <p style="margin: 0"><img alt="Frame.io" src="/help/assets/frameio-logo.png" style="width: 42px;height:42px;"></p>
         <strong>Frame.io</strong>
       </td>
-      <td style="align: center">
-        <p style="margin: 0"><img alt="Frame.io" src="/help/assets/aem-logo.png" style="width: 42px;height:42px;"></p>
-        <strong>AEM Assets</strong>
-      </td>
     </tr>
 </table>
 
-## 주요 비즈니스 사용 사례
-
-* 워크플로우 및 승인 간소화
-* 지출 및 리소스 최적화
-* 용량, 프로젝트, 위험 요소 및 일정 파악 능력 향상
-* 메타데이터 태깅과 같은 다운스트림 프로세스 자동화
+>[!TIP]
+>
+>당사의 Adobe 제품 전문가 팀은 주요 콘텐츠 공급망 사용 사례에 대한 통합 튜토리얼 컬렉션을 취합했습니다. 두 개 이상의 솔루션을 사용하는 경우 이러한 솔루션을 통합하는 가장 좋은 방법을 알아보십시오.  다음을 확인하십시오. [콘텐츠 공급망 통합 자습서](https://experienceleague.adobe.com/docs/integrations-learn/experience-cloud/solution-categories/content-supply-chain.html?lang=en).
 
 ## 추천 과정
 
