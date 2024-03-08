@@ -1,18 +1,18 @@
 ---
-user-guide-title: Adobe 컨텐츠 공급망 자습서
-breadcrumb-title: 콘텐츠 공급망 튜토리얼
-user-guide-desription: View Experience League tutorials on Adobe Content supply chain, the simplified promise of Adobe’s solutions to help organizations accelerate and scale content creation, improve content engagement and ROI, and deliver the content that fuels digital engagements buyers prefer.
-source-git-commit: fb7ae72b84c093627e79ddd171f703619410b637
+user-guide-title: Adobe 컨텐츠 공급망 Tutorials
+breadcrumb-title: Content Supply Chain 자습서
+user-guide-desription: View Experience League tutorials on Adobe Content Supply Chain, the simplified promise of Adobe's solutions to help organizations accelerate and scale content creation, improve content engagement and ROI, and deliver the content that fuels digital engagements buyers prefer.
+source-git-commit: 77982009a37d9d15cbc5e93c7537bc4883789b28
 workflow-type: tm+mt
 source-wordcount: '40'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# Adobe 컨텐츠 공급망 자습서 {#tutorials}
+# Adobe 컨텐츠 공급망 Tutorials {#tutorials}
 
-+ [[!DNL Content supply chain] 튜토리얼](overview.md)
++ [[!DNL Content Supply Chain] 튜토리얼](overview.md)
 + [워크플로우 및 계획](workflow-and-planning.md)
 + [콘텐츠 제작 및 프로덕션](content-creation-and-production.md)
 + [자산 관리](asset-management.md)
