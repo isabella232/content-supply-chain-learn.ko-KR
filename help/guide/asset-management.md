@@ -9,244 +9,400 @@ role: Admin, User, Leader, Developer
 level: Beginner
 last-substantial-update: 2024-03-06T00:00:00Z
 jira: KT-15076
-source-git-commit: fecc107042220664ce5b76584f834a025844ef4b
+source-git-commit: f3082975a674a13152aa92c06302e67e9f4715b6
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 7%
+source-wordcount: '1075'
+ht-degree: 3%
 
 ---
 
 
 # 자산 관리 자습서
 
-브랜드 일관성을 보장하면서 단일 클라우드 기반 솔루션에서 수백만 개의 자산에 손쉽게 액세스하고 재사용할 수 있습니다.
+브랜드 일관성을 보장하면서 단일 클라우드 기반 솔루션에서 수백만 개의 자산에 손쉽게 액세스하고 재사용할 수 있습니다.  이 자습서는 Adobe Experience Manager Assets 사용에 중점을 둡니다.
 
-에셋 관리에 사용되는 Adobe 솔루션:
-
-<table>
-    <tr style="border: 0;">
-      <td style="align: center">
-        <p style="margin: 0"><img alt="Frame.io" src="/help/assets/aem-logo.png" style="width: 42px;height:42px;"></p>
-        <strong>AEM Assets</strong>
-      </td>
-    </tr>
-</table>
 
 >[!TIP]
 >
 >당사의 Adobe 제품 전문가 팀은 주요 콘텐츠 공급망 사용 사례에 대한 통합 튜토리얼 컬렉션을 취합했습니다. 두 개 이상의 솔루션을 사용하는 경우 이러한 솔루션을 통합하는 가장 좋은 방법을 알아보십시오.  다음을 확인하십시오. [콘텐츠 공급망 통합 자습서](https://experienceleague.adobe.com/docs/integrations-learn/experience-cloud/solution-categories/content-supply-chain.html?lang=en).
 
 ## 추천 과정
-
-<table style="margin-top:0 !important">
-    <tr>
-      <td style="width:33%">
-        <a href="https://experienceleague.adobe.com/docs/courses/using/experiencemanager-u-1-2023-assets-essentials.html" target="_blank">
-          <img alt="AEM Assets Essentials 시작하기" src="https://cdn.experienceleague.adobe.com/thumb/getting-started-with-assets-essentials.png">
-        </a>
-        <div>
-          <a href="https://experienceleague.adobe.com/docs/courses/using/experiencemanager-u-1-2023-assets-essentials.html" target="_blank">
-        <strong>AEM Assets Essentials 시작하기</strong></a>
-        <p class="is-size-7 recs-limit-description">AEM Assets Essentials가 어떻게 조직의 에셋 관리를 간소화할 수 있는지 알아봅니다.</p>
-        <p><a href="https://experienceleague.adobe.com/docs/courses/using/experiencemanager-u-1-2023-assets-essentials.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM"><span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span></a></p>
+<div class="columns is-multiline">
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[AEM Assets - Assets View] Bulk Import - Feature Video" tabIndex="0">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/bulk-import.html" title="[AEM Assets - 에셋 보기] 일괄 가져오기 - 기능 비디오" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426857?format=jpeg" alt="[AEM Assets - 에셋 보기] 일괄 가져오기 - 기능 비디오">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/bulk-import.html" title="[AEM Assets - 에셋 보기] 일괄 가져오기 - 기능 비디오">[AEM Assets - 에셋 보기] 일괄 가져오기 - 기능 비디오</a>
+          </p>
+          <p class="is-size-6">Dropbox을 명확하고 따라하기 쉬운 통합 프로세스를 위한 예제 클라우드 스토리지 공급자로 사용하여 일괄 가져오기 기능을 사용하여 많은 파일을 AEM Assets으로 가져오는 방법에 대해 알아봅니다.</p>
         </div>
-      </td>
-      <td style="width:33%">
-        <a href="https://experienceleague.adobe.com/docs/courses/using/experiencemanager-a-1-2020-1-assets.html" target="_blank">
-          <img alt="&apos;관리자를 위한 AEM Assets 구성&apos; 자습서의 썸네일 이미지" src="https://cdn.experienceleague.adobe.com/thumb/configuring-aem-assets-for-administrators.jpg">
+        <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/bulk-import.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
         </a>
-        <div>
-          <a href="https://experienceleague.adobe.com/docs/courses/using/experiencemanager-a-1-2020-1-assets.html" target="_blank">
-        <strong>관리자용 AEM Assets 구성</strong></a>
-        <p class="is-size-7 recs-limit-description">기본 콘텐츠 아키텍처 및 분류 체계 설정부터 메타데이터 및 에셋 처리 사용자 지정에 이르기까지 핵심 사항을 구성하여 AEM Assets 구현을 위한 견고한 기반을 구축하는 방법을 알아봅니다.</p>
+      </div>
+    </div>
+  </div>
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[Asset Essentials][Workfront] Assets Essentials and Workfront integration - Catalog" tabIndex="1">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/overview.html" title="[Asset Essentials][Workfront] Assets Essentials 및 Workfront 통합 - 카탈로그" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3422184?format=jpeg" alt="[Asset Essentials][Workfront] Assets Essentials 및 Workfront 통합 - 카탈로그">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/overview.html" title="[Asset Essentials][Workfront] Assets Essentials 및 Workfront 통합 - 카탈로그">[Asset Essentials][Workfront] Assets Essentials 및 Workfront 통합 - 카탈로그</a>
+          </p>
+          <p class="is-size-6">Workfront 및 Assets Essentials을 통합하는 방법을 알아봅니다.</p>
         </div>
-        <p><a href="https://experienceleague.adobe.com/docs/courses/using/experiencemanager-a-1-2020-1-assets.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM"><span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span></a></p>
-      </td>
-    </tr>
-</table>
-
-## 튜토리얼
-
-<div class="columns is-multiline"><div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Integrate Adobe Workfront and AEM Assets Essentials" tabIndex="0">
-  <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-    <div class="card-image">
-      <figure class="image x-is-16by9">
-        <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/overview.html" title="Adobe Workfront 및 AEM Assets Essentials 통합" tabindex="-1">
-          <img class="is-bordered-r-small" src="https://cdn.experienceleague.adobe.com/thumb/docs-workfront.png" alt="Adobe Workfront 및 AEM Assets Essentials 통합">
+        <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/overview.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
         </a>
-      </figure>
-    </div>
-    <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-      <div class="top-card-content">
-          <p class="headline is-size-6 has-text-weight-bold">
-              <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/overview.html" title="Adobe Workfront 및 AEM Assets Essentials 통합">Adobe Workfront 및 AEM Assets Essentials 통합</a>
-          </p>
-          <p class="is-size-6"><em>Workfront 및 AEM Assets Essentials를 통합하여 크리에이티브 워크플로 관리를 간소화하는 방법에 대해 알아봅니다.</em></p>
       </div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/overview.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
-      </a>
     </div>
   </div>
-</div><div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Use Adobe Workfront plugins to integrate with Creative Cloud" tabIndex="1">
-  <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-    <div class="card-image">
-      <figure class="image x-is-16by9">
-        <a href="https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-integrations/workfront-for-creative-cloud/wf-adobe-cc.html" title="Adobe Workfront 플러그인을 사용하여 Creative Cloud와 통합" tabindex="-1">
-          <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3415452?format=jpeg" alt="Adobe Workfront 플러그인을 사용하여 Creative Cloud와 통합">
-        </a>
-      </figure>
-    </div>
-    <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-      <div class="top-card-content">
-          <p class="headline is-size-6 has-text-weight-bold">
-              <a href="https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-integrations/workfront-for-creative-cloud/wf-adobe-cc.html" title="Adobe Workfront 플러그인을 사용하여 Creative Cloud와 통합">Adobe Workfront 플러그인을 사용하여 Creative Cloud과 통합</a>
-          </p>
-          <p class="is-size-6"><em>Workfront을 Creative Cloud과 통합하여 Adobe Creative Cloud을 종료하지 않고 할당된 작업을 찾아 업데이트합니다.</em></p>
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[AEM Assets] Adobe Express integration - Feature Video" tabIndex="2">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-express-aem-assets-add-on.html" title="[AEM Assets] Adobe Express 통합 - 기능 비디오" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3425193?format=jpeg" alt="[AEM Assets] Adobe Express 통합 - 기능 비디오">
+          </a>
+        </figure>
       </div>
-      <a href="https://experienceleague.adobe.com/docs/workfront/using/adobe-workfront-integrations/workfront-for-creative-cloud/wf-adobe-cc.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">비디오 보기</span>
-      </a>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-express-aem-assets-add-on.html" title="[AEM Assets] Adobe Express 통합 - 기능 비디오">[AEM Assets] Adobe Express 통합 - 기능 비디오</a>
+          </p>
+          <p class="is-size-6">AEM Assets 및 Adobe Express을 통해 콘텐츠 공급망을 최적화하여 모든 팀원의 생산성과 접근성을 향상시키는 방법에 대해 알아봅니다.</p>
+        </div>
+        <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-express-aem-assets-add-on.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
+        </a>
+      </div>
     </div>
   </div>
-</div><div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Configure Adobe Workfront and AEM Assets Essentials" tabIndex="2">
-  <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-    <div class="card-image">
-      <figure class="image x-is-16by9">
-        <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html" title="Adobe Workfront 및 AEM Assets Essentials 구성" tabindex="-1">
-          <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336254?format=jpeg" alt="Adobe Workfront 및 AEM Assets Essentials 구성">
-        </a>
-      </figure>
-    </div>
-    <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-      <div class="top-card-content">
-          <p class="headline is-size-6 has-text-weight-bold">
-              <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html" title="Adobe Workfront 및 AEM Assets Essentials 구성">Adobe Workfront 및 AEM Assets Essentials 구성</a>
-          </p>
-          <p class="is-size-6"><em>Adobe Workfront 및 Assets Essentials 통합을 구성하는 방법 알아보기</em></p>
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[Adobe Express] Empower marketing teams to create multi-channel content - Feature video" tabIndex="3">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://experienceleague.adobe.com/docs/creative-cloud-enterprise-learn/cce-learning-hub/expressoverview/expressusecase/multi-channel-marketing-content.html" title="[Adobe Express] 마케팅 팀이 멀티채널 콘텐츠를 만들 수 있는 권한 부여 - 주요 비디오" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3424446?format=jpeg" alt="[Adobe Express] 마케팅 팀이 멀티채널 콘텐츠를 만들 수 있는 권한 부여 - 주요 비디오">
+          </a>
+        </figure>
       </div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">비디오 보기</span>
-      </a>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://experienceleague.adobe.com/docs/creative-cloud-enterprise-learn/cce-learning-hub/expressoverview/expressusecase/multi-channel-marketing-content.html" title="[Adobe Express] 마케팅 팀이 멀티채널 콘텐츠를 만들 수 있는 권한 부여 - 주요 비디오">[Adobe Express] 마케팅 팀이 멀티채널 콘텐츠를 만들 수 있는 권한 부여 - 주요 비디오</a>
+          </p>
+          <p class="is-size-6">이벤트 마케팅 팀이 온라인 이벤트에 대한 시청자를 끌어들이기 위해 고유한 콘텐츠를 만드는 방법을 알아봅니다. 이 워크플로에서 B2B 마케터는 Adobe Express 키트 및 라이브러리의 템플릿을 사용하여 브랜드의 새 프로젝트를 시작합니다. B2B 마케터는 다양한 소셜 및 웹 채널에 대한 변형을 만들고 소셜 미디어 및 비디오 호스팅 플랫폼에서 콘텐츠를 공유합니다.</p>
+        </div>
+        <a href="https://experienceleague.adobe.com/docs/creative-cloud-enterprise-learn/cce-learning-hub/expressoverview/expressusecase/multi-channel-marketing-content.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
+        </a>
+      </div>
     </div>
   </div>
-</div><div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Workfront enhanced connector basics" tabIndex="3">
-  <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-    <div class="card-image">
-      <figure class="image x-is-16by9">
-        <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html" title="Workfront 강화 커넥터 기본 사항" tabindex="-1">
-          <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/337575?format=jpeg" alt="Workfront 강화 커넥터 기본 사항">
-        </a>
-      </figure>
-    </div>
-    <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-      <div class="top-card-content">
-          <p class="headline is-size-6 has-text-weight-bold">
-              <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html" title="Workfront 강화 커넥터 기본 사항">Workfront 강화 커넥터 기본 사항</a>
-          </p>
-          <p class="is-size-6"><em>Adobe Workfront 및 Experience Manager Assets 강화 커넥터의 기본 사항에 대해 알아봅니다.</em></p>
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[AEM Assets] Workfront Enhanced Integration Basics - Feature Video" tabIndex="4">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html" title="[AEM Assets] Workfront 향상된 통합 기본 사항 - 기능 비디오" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/337575?format=jpeg" alt="[AEM Assets] Workfront 향상된 통합 기본 사항 - 기능 비디오">
+          </a>
+        </figure>
       </div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">비디오 보기</span>
-      </a>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html" title="[AEM Assets] Workfront 향상된 통합 기본 사항 - 기능 비디오">[AEM Assets] Workfront 향상된 통합 기본 사항 - 기능 비디오</a>
+          </p>
+          <p class="is-size-6">에셋 및 폴더를 연결하고, 메타데이터 매핑을 정의하고, 에셋을 AEM으로 전송하고, 에셋을 버전 관리하고 에셋을 자동 게시하는 방법을 포함하여 Adobe Workfront 및 Experience Manager Assets Enhanced Integration의 기본 사항에 대해 알아봅니다.</p>
+        </div>
+        <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
+        </a>
+      </div>
     </div>
   </div>
-</div><div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Integrate Workfront and AEM Assets with the enhanced connector" tabIndex="4">
-  <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-    <div class="card-image">
-      <figure class="image x-is-16by9">
-        <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/aem-experts-series/overview.html" title="향상된 커넥터와 Workfront 및 AEM Assets 통합" tabindex="-1">
-          <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/340331?format=jpeg" alt="향상된 커넥터와 Workfront 및 AEM Assets 통합">
-        </a>
-      </figure>
-    </div>
-    <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-      <div class="top-card-content">
-          <p class="headline is-size-6 has-text-weight-bold">
-              <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/aem-experts-series/overview.html" title="향상된 커넥터와 Workfront 및 AEM Assets 통합">향상된 커넥터와 Workfront 및 AEM Assets 통합</a>
-          </p>
-          <p class="is-size-6"><em>향상된 커넥터를 사용하여 Workfront과 AEM Assets 통합에 대한 4부 비디오 시리즈입니다.</em></p>
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[AEM Assets] AEM and Adobe Asset Link Creative Workflow - Value Video" tabIndex="5">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-asset-link.html" title="[AEM Assets] AEM 및 Asset Link Adobe 크리에이티브 워크플로 - 가치 비디오" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/335927?format=jpeg" alt="[AEM Assets] AEM 및 Asset Link Adobe 크리에이티브 워크플로 - 가치 비디오">
+          </a>
+        </figure>
       </div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/aem-experts-series/overview.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-        <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">비디오 보기</span>
-      </a>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-asset-link.html" title="[AEM Assets] AEM 및 Asset Link Adobe 크리에이티브 워크플로 - 가치 비디오">[AEM Assets] AEM 및 Asset Link Adobe 크리에이티브 워크플로 - 가치 비디오</a>
+          </p>
+          <p class="is-size-6">AAL 및 AAM을 사용하는 사용자의 크리에이티브 워크플로를 보여 주는 비디오</p>
+        </div>
+        <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-asset-link.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
+        </a>
+      </div>
     </div>
   </div>
-</div></div>
-
-<!--
-<table class="tablelayout-is-fixed">
-<tr>
-  <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/overview.html">
-      <img alt="Integrate Adobe Workfront and AEM Assets Essentials" src="https://cdn.experienceleague.adobe.com/thumb/docs-workfront.png">
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/overview.html">
-    <strong>Integrate Adobe Workfront and AEM Assets Essentials</strong>
-    </a>
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[AJO] Create content with the Email Designer - Feature Video" tabIndex="6">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/email-channel/create-content-with-the-email-designer.html" title="[AJO] 이메일 디자이너를 사용하여 콘텐츠 만들기 - 기능 비디오" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/334150?format=jpeg" alt="[AJO] 이메일 디자이너를 사용하여 콘텐츠 만들기 - 기능 비디오">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/email-channel/create-content-with-the-email-designer.html" title="[AJO] 이메일 디자이너를 사용하여 콘텐츠 만들기 - 기능 비디오">[AJO] 이메일 디자이너를 사용하여 콘텐츠 만들기 - 기능 비디오</a>
+          </p>
+          <p class="is-size-6">처음부터 이메일을 작성하는 방법에 대해 알아봅니다. AEM Assets Essentials 라이브러리에서 에셋을 사용하고, 반응형 이메일 디자인을 편집하고, 템플릿에서 이메일을 작성하는 방법에 대해 이해합니다.</p>
+        </div>
+        <a href="https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/email-channel/create-content-with-the-email-designer.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
+        </a>
+      </div>
     </div>
-    <p>
-    <em>Learn how to integrate Workfront and AEM Assets Essentials to streamline the management of creative workflows.</em>
-    </p><p>
-  </p></td>
-  <td>
-    <a href="https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/integrations/adobe-creative-cloud/use-adobe-workfront-extensions-for-creative-cloud.html">
-      <img alt="Use Adobe Workfront plugins to integrate with Creative Cloud" src="https://video.tv.adobe.com/v/3415452?format=jpeg">
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/docs/workfront-learn/tutorials-workfront/integrations/adobe-creative-cloud/use-adobe-workfront-extensions-for-creative-cloud.html">
-    <strong>Use Adobe Workfront plugins to integrate with Creative Cloud</strong>
-    </a>
+  </div>
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[Asset Essentials] Getting started with Assets Essentials - Feature Video" tabIndex="7">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html" title="[Asset Essentials] Assets Essentials 시작하기 - 기능 비디오" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336005?format=jpeg" alt="[Asset Essentials] Assets Essentials 시작하기 - 기능 비디오">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html" title="[Asset Essentials] Assets Essentials 시작하기 - 기능 비디오">[Asset Essentials] Assets Essentials 시작하기 - 기능 비디오</a>
+          </p>
+          <p class="is-size-6">Assets Essentials이 직관적이고 사용자 친화적인 사용자 인터페이스를 제공하여 에셋 및 관련 정보를 쉽게 찾고 기억할 수 있도록 하는 방법에 대해 알아봅니다.</p>
+        </div>
+        <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/getting-started.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
+        </a>
+      </div>
     </div>
-    <p>
-    <em>Integrate Workfront with Creative Cloud to find and update the work assigned to you without leaving Adobe Creative Cloud.</em>
-    </p><p>
-  </p></td>
-  <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html">
-    <img alt="Configure Adobe Workfront and AEM Assets Essentials" src="https://video.tv.adobe.com/v/336254?format=jpeg">
-    </a>
-    <div>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/workfront/configure.html">
-    <strong>Configure Adobe Workfront and AEM Assets Essentials</strong>
-    </a>
+  </div>
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[AEM Assets] Content Automation - Value video" tabIndex="8">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html" title="[AEM Assets] 컨텐츠 자동화 - 가치 비디오" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333197?format=jpeg" alt="[AEM Assets] 컨텐츠 자동화 - 가치 비디오">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html" title="[AEM Assets] 컨텐츠 자동화 - 가치 비디오">[AEM Assets] 컨텐츠 자동화 - 가치 비디오</a>
+          </p>
+          <p class="is-size-6">Adobe Experience Manager Assets 컨텐츠 자동화와 함께 Photoshop 및 Lightroom 기능을 적용하는 개요입니다.</p>
+        </div>
+        <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
+        </a>
+      </div>
     </div>
-    <p>
-    <em>Learn how to configure the Adobe Workfront and Assets Essentials integration</em>
-    </p>
-  </td>
-  </tr>
-  <tr>
-  <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html">
-      <img alt="Workfront enhanced connector basics" src="https://video.tv.adobe.com/v/337575?format=jpeg">
-    </a>
-     <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/basics.html">
-        <strong>Workfront enhanced connector basics</strong>
-      </a>
+  </div>
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[Assets] Metadata profiles - Feature Video" tabIndex="9">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/metadata-profiles" title="[Assets] 메타데이터 프로필 - 기능 비디오" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33974?format=jpeg" alt="[Assets] 메타데이터 프로필 - 기능 비디오">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/metadata-profiles" title="[Assets] 메타데이터 프로필 - 기능 비디오">[Assets] 메타데이터 프로필 - 기능 비디오</a>
+          </p>
+          <p class="is-size-6">메타데이터 프로필을 사용하면 자산 폴더 내의 자산에 기본 메타데이터를 자동으로 적용할 수 있으므로 AEM 사용자의 메타데이터 관리 부담을 줄이고 메타데이터 일관성을 높일 수 있습니다.</p>
+        </div>
+        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/metadata-profiles" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
+        </a>
+      </div>
     </div>
-    <p>
-    <em>Learn about the basics of the Adobe Workfront and Experience Manager Assets enhanced connector.</em>
-    </p>
-  </td>
-  <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/aem-experts-series/overview.html">
-      <img alt="Integrate Workfront and AEM Assets with the enhanced connector" src="https://video.tv.adobe.com/v/340331?format=jpeg">
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/workfront/enhanced-connector/aem-experts-series/overview.html">
-    <strong>Integrate Workfront and AEM Assets with the enhanced connector</strong>
-    </a>
+  </div>
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[Assets] Navigation - Feature Video" tabIndex="10">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/authoring/navigation.html" title="[Assets] 탐색 - 기능 비디오" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32046?format=jpeg" alt="[Assets] 탐색 - 기능 비디오">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/authoring/navigation.html" title="[Assets] 탐색 - 기능 비디오">[Assets] 탐색 - 기능 비디오</a>
+          </p>
+          <p class="is-size-6">AEM Assets 탐색의 기본 사항을 살펴보십시오.</p>
+        </div>
+        <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/authoring/navigation.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
+        </a>
+      </div>
     </div>
-    <p>
-    <em>Four part videos series on integrating Workfront and AEM Assets using the enhanced connector.</em>
-    </p><p>
-  </p></td>  
-</tr>
-</table>
--->
+  </div>
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[Assets] Comments and Annotations - Feature Video" tabIndex="11">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/comments-and-annotations.html" title="[Assets] 댓글 및 주석 - 기능 비디오" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32049?format=jpeg" alt="[Assets] 댓글 및 주석 - 기능 비디오">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/comments-and-annotations.html" title="[Assets] 댓글 및 주석 - 기능 비디오">[Assets] 댓글 및 주석 - 기능 비디오</a>
+          </p>
+          <p class="is-size-6">AEM에서 주석 및 주석을 사용하여 에셋에 대해 통신하고 공동 작업하는 방법을 알아봅니다.</p>
+        </div>
+        <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/collaboration/comments-and-annotations.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[Assets] Search - Feature Video" tabIndex="12">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search.html" title="[Assets] 검색 - 주요 비디오" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32054?format=jpeg" alt="[Assets] 검색 - 주요 비디오">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search.html" title="[Assets] 검색 - 주요 비디오">[Assets] 검색 - 주요 비디오</a>
+          </p>
+          <p class="is-size-6">AEM Omnisearch를 사용하여 에셋을 빠르게 검색하는 방법에 대해 알아봅니다.</p>
+        </div>
+        <a href="https://docs.adobe.com/content/help/en/experience-manager-learn/assets/search-and-discovery/search.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[Assets] Download - Feature Video" tabIndex="13">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/sharing/download.html" title="[Assets] 다운로드 - 기능 비디오" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/35090?format=jpeg" alt="[Assets] 다운로드 - 기능 비디오">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/sharing/download.html" title="[Assets] 다운로드 - 기능 비디오">[Assets] 다운로드 - 기능 비디오</a>
+          </p>
+          <p class="is-size-6">사용 및 공유를 위해 자산 및 해당 표현물을 로컬 시스템에 다운로드하는 방법에 대해 알아봅니다.</p>
+        </div>
+        <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/sharing/download.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[Assets] AEM Desktop App 2.0 - Feature Video" tabIndex="14">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html" title="[Assets] AEM 데스크탑 앱 2.0 - 기능 비디오" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28868?format=jpeg" alt="[Assets] AEM 데스크탑 앱 2.0 - 기능 비디오">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html" title="[Assets] AEM 데스크탑 앱 2.0 - 기능 비디오">[Assets] AEM 데스크탑 앱 2.0 - 기능 비디오</a>
+          </p>
+          <p class="is-size-6">AEM Desktop App을 사용하여 모든 응용 프로그램 및 파일 형식에 대해 데스크톱의 AEM에서 관리되는 에셋에 대한 액세스를 단순화합니다.</p>
+        </div>
+        <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/aem-desktop-app.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[Assets] DM Smart Image Crop - Feature Video " tabIndex="15">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html" title="[Assets] DM 스마트 이미지 자르기 - 주요 비디오 " tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/21519?format=jpeg" alt="[Assets] DM 스마트 이미지 자르기 - 주요 비디오 ">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html" title="[Assets] DM 스마트 이미지 자르기 - 주요 비디오 ">[Assets] DM 스마트 이미지 자르기 - 주요 비디오 </a>
+          </p>
+          <p class="is-size-6">스마트 자르기는 Adobe Sensei을 사용하여 반응형 디자인을 위한 콘텐츠 자르기에 드는 시간과 비용을 없애줍니다.</p>
+        </div>
+        <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="[Assets] Asset Source File Translation - Feature Video" tabIndex="16">
+    <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+      <div class="card-image">
+        <figure class="image x-is-16by9">
+          <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/translation/source-file-translation-feature-video-use" title="[Assets] 자산 소스 파일 변환 - 기능 비디오" tabindex="-1">
+            <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/18331?format=jpeg" alt="[Assets] 자산 소스 파일 변환 - 기능 비디오">
+          </a>
+        </figure>
+      </div>
+      <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+        <div class="top-card-content">
+          <p class="headline is-size-6 has-text-weight-bold">
+            <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/translation/source-file-translation-feature-video-use" title="[Assets] 자산 소스 파일 변환 - 기능 비디오">[Assets] 자산 소스 파일 변환 - 기능 비디오</a>
+          </p>
+          <p class="is-size-6">Adobe Experience Manager(AEM) Assets를 사용하면 새로운 관련 에셋 기능을 사용하여 공통 속성을 공유하는 에셋을 식별하고 관련 에셋으로 표시할 수 있습니다.</p>
+        </div>
+        <a href="https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/translation/source-file-translation-feature-video-use" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+          <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 보기</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## 추가 리소스
 
